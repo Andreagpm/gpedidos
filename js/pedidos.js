@@ -14,26 +14,39 @@ function Pedido(fecha,numeroarticulos,total,direccionentrega,direccionfacturacio
 	this.total = total;
 	this.direccionentrega = direccionentrega;
 	this.direccionfacturacion = direccionfacturacion;
-
+ // fecha
 this.getfecha = function(){
 	return this.getfecha;
 };
+this.setfecha = function(fecha){
+ this.fecha = fecha;
+};
+// numero de articulo
 this.getnumeroarticulos = function(){
 	return this.numeroarticulos;
 };
+this.setnumeroarticulos = function(numeroarticulos){
+ this.numeroarticulos = numeroarticulos;
+};
+// total
 this.gettotal = function(){
 	return this.total;
 };
+this.settotal = function(total){
+ this.total = total;
+};
+// direccion de entrega
 this.getdireccionentrega = function(){
 	return this.direccionentrega;
-};
-this.getdireccionfacturacion = function(){
-	return this.direccionfacturacion;
 };
 this.setdireccionentrega = function(direccionentrega){
 	this.direccionentrega = direccionentrega;
 };
-this.setdireccionfacturacion = function(){
+// direccion e facturacion
+this.getdireccionfacturacion = function(){
+	return this.direccionfacturacion;
+};
+this.setdireccionfacturacion = function(direccionfacturacion){
  this.direccionfacturacion = direccionfacturacion;
 };
 }
